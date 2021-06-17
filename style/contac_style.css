@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --transparent: #fff;
+    --darkcolor: #000;
+    --btncolor: #E5434A;
+}
+header a {font-family: 'Roboto Condensed';}
+.content-form {
+    width: 100%;
+    height: 94vh;
+    display: block;
+    margin: 0px auto;
+    background: url(../img/pexels-larissa-deruzzi-6546168-min.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form {
+    background: var(--transparent);
+    display: block;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+}
+.title {
+    margin: 20px auto;
+    text-align: center;
+}
+.title h2 {
+    font-family: 'Lobster';
+    color: var(--darkcolor);
+    font-weight: bold;
+}
+.title h2 span {
+    color: var(--btncolor);
+}
+.form input {
+    margin: 30px auto;
+    display: block;
+    width: 70%;
+    border: 1px solid var(--darkcolor);
+    padding: 5px;
+    outline: 0;
+    transition: 0.2s ease-in-out;
+}
+input:focus {
+    border-color: var(--btncolor);
+    transform: scale(1.03);
+}
+input::placeholder {
+    text-align: center;
+    color: var(--darkcolor);
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.messenger_content {
+    border: 1px solid var(--darkcolor);
+    padding: 5px;
+    margin: 40px auto;
+    display: block;
+    position: relative;
+    width: 70%;
+    height: 130px;
+    max-width: 1000px;
+    outline: 0;
+    transition: 0.2s ease-in-out;
+}
+.messenger_content::placeholder {
+    text-align: center;
+    color: var(--darkcolor);
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.messenger_content:focus {
+    border-color: var(--btncolor);
+    transform: scale(1.03);
+}
+#btn_send {
+    display: block;
+    margin: auto;
+    width: 30%;
+    background: var(--btncolor);
+    color: var(--transparent);
+    padding: 10px;
+    border: none;
+    font-family: 'Roboto';
+}
+@media screen and (max-width: 1290px) {
+    .form {
+        margin: 20px auto;
+    }
+    .form input {
+        width: 100%;
+    }
+    .messenger_content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 764px){
+    .form input {
+        margin: 20px auto;
+    }
+    .messenger_content {
+        margin: 20px auto;
+    }
+    .content-btn {
+        margin-top: 20px;
+    }
+    #btn_send {
+        width: 100%;
+    }
+}
